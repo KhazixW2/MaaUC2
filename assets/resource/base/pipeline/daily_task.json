@@ -1,0 +1,179 @@
+{
+    "Entry_Tavern": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "酒馆"
+        ],
+        "action": "Click",
+        "target_offset": [
+            -50,
+            -150,
+            0,
+            0
+        ],
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Warehouse": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "仓库"
+        ],
+        "target_offset": [
+            -150,
+            -150,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Cemetery": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "墓园"
+        ],
+        "target_offset": [
+            0,
+            -50,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Market": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "市场"
+        ],
+        "target_offset": [
+            0,
+            -100,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Workshop": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "工坊"
+        ],
+        "target_offset": [
+            0,
+            -100,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Manor": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "庄园"
+        ],
+        "target_offset": [
+            0,
+            -100,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "Entry_Advanture": {
+        "recognition": "OCR",
+        "roi": [
+            59,
+            723,
+            600,
+            479
+        ],
+        "expected": [
+            "出征"
+        ],
+        "target_offset": [
+            0,
+            -80,
+            0,
+            0
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "SwipeToRight": {
+        "action": "Swipe",
+        "begin": [
+            523,
+            846,
+            20,
+            20
+        ],
+        "end": [
+            124,
+            844,
+            20,
+            20
+        ]
+    },
+    "SwipeToLeft": {
+        "action": "Swipe",
+        "begin": [
+            124,
+            844,
+            20,
+            20
+        ],
+        "end": [
+            523,
+            846,
+            20,
+            20
+        ]
+    }
+}

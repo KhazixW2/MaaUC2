@@ -1,84 +1,68 @@
 {
+    "name": "MaaGumballs",
+    "url": "https://github.com/KhazixW2/MaaGumballs",
+    "mirrorchyan_rid": "MaaGB",
+    "mirrorchyan_multiplatform": true,
     "controller": [
         {
-            "name": "安卓端",
+            "name": "ADB 默认方式",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio"
-            }
         }
     ],
     "resource": [
         {
             "name": "官服",
             "path": [
-                "{PROJECT_DIR}/resource"
-            ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource",
-                "{PROJECT_DIR}/resource_bilibili"
+                "{PROJECT_DIR}/resource/base"
             ]
         }
+        
     ],
     "agent": {
         "child_exec": "python",
         "child_args": [
+            "-u",
             "{PROJECT_DIR}/agent/main.py"
         ]
     },
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
-        },
-        {
-            "name": "选项任务",
-            "entry": "MyTask2",
-            "option": [
-                "任务选项1"
+            "name": "启动游戏",
+            "entry": "Start_Up",
+            "doc": [
+                "## 新版本可以来github下载最新的资源包,[MaaGumballs](https://github.com/KhazixW2/MaaGumballs)",
+                "## 自动化黑盒测试工具用户许可协议",
+                "",
+                "### 第一条 定义",
+                "- **本软件**:指该自动化黑盒测试工具",
+                "- **用户**:指使用本软件的个人或实体",
+                "- **第三方应用**:指本软件测试的目标应用程序",
+                "",
+                "### 第二条 使用授权",
+                "用户获得使用本软件的非独占、不可转让的许可。",
+                "",
+                "### 第三条 用户义务",
+                "- 用户承诺已充分阅读并理解第三方应用的用户协议",
+                "- 用户确认同意第三方应用的所有条款和条件",
+                "- 用户保证仅将本软件用于合法的测试目的",
+                "- 用户承担因使用本软件而产生的所有责任",
+                "",
+                "### 第四条 免责条款",
+                "- 本软件按\"现状\"提供,不提供任何明示或暗示的保证",
+                "- 开发者不对用户使用本软件造成的任何损失承担责任",
+                "- 用户理解并接受使用本软件的风险",
+                "",
+                "### 第五条 协议生效",
+                "用户使用本软件即表示接受本协议的所有条款。"
             ]
         },
         {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
-        },
-        {
-            "name": "带Custom的任务",
-            "entry": "MyTask4"
+            "name": "退出游戏",
+            "entry": "StopGame",
+            "doc": "注意: 该node只在完成所有任务后,仅退出游戏"
         }
     ],
     "option": {
-        "任务选项1": {
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
+        
     }
 }

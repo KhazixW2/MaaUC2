@@ -1,0 +1,53 @@
+{
+    "Start_Up": {
+        "next": [
+            "MainWindow_Check"
+        ],
+        "interrupt": [
+            "GameLoading",
+            "StartGame"
+        ]
+    },
+    "GameLoading": {
+        "recognition": "OCR",
+        "expected": [
+            "抵制",
+            "游戏"
+        ],
+        "roi" : [84,1087,544,186],
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "MainWindow_Check": {
+        "post_delay": 1000,
+        "recognition": "OCR",
+        "roi" : [26,593,672,579],
+        "expected": "出征",
+        "next": [
+            "MainWindow_Check_Second",
+            "Start_Up"
+        ]
+    },
+    "MainWindow_Check_Second": {
+        "recognition": "OCR",
+        "roi" : [26,593,672,579],
+        "expected": "出征"
+    },
+    "CloseNotice": {
+        "post_delay": 1000,
+        "threshold": 0.8,
+        "recognition": "TemplateMatch",
+        "template": [],
+        "action": "Click"
+    },
+    "StartGame": {
+        "post_delay": 5000,
+        "action": "StartApp",
+        "package": "com.taojin.dungeon2"
+    },
+    "StopGame": {
+        "post_delay": 1000,
+        "action": "StopApp",
+        "package": "com.taojin.dungeon2"
+    }
+}

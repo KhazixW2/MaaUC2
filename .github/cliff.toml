@@ -1,8 +1,7 @@
 [remote.github]
-owner = "MaaXYZ"
-repo = "MaaPracticeBoilerplate"
-#自用时换成自己的仓库owner和repo
-#注意，本地git user需与github一致才能实现成功@
+owner = "KhazixW2"
+repo = "MaaGumballs"
+
 [changelog]
 # 标题
 header = """
@@ -17,15 +16,8 @@ body = """
 {% macro print_commit(commit) -%}
     - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
         {% if commit.breaking %}[**breaking**] {% endif %}\
-        {{ commit.message | split(pat="\n") | first | upper_first }} \
-        @{{ commit.author.name }}
-        {%- if commit.footers -%}
-            {%- for footer in commit.footers -%}
-                {%- if footer.token == "Co-authored-by" -%}
-                    {%- set co_author_name = footer.value | split(pat=" <") | first | trim %} @{{ co_author_name }}
-                {%- endif -%}
-            {%- endfor -%}
-        {%- endif %}
+        {{ commit.message | upper_first }} \
+        @{{ author.login | default(value=commit.author.name) }}
 {% endmacro -%}
 
 {% if version %}\
@@ -62,16 +54,15 @@ body = """
 
 # 尾部
 footer = """
+
+[已有 Mirror酱 CDK？点击前往高速下载](https://mirrorchyan.com/zh/projects?rid=MaaGB&source=gbgh-release)
+<!--本软件完全免费，若您有付费购买请立即退款并举报！-->
 """
 
 [git]
 # 过滤提交
 conventional_commits = true # 使用约定式提交格式
 filter_unconventional = false # 不过滤非约定式提交
-# 启用完整的 commit 信息
-split_commits = false
-# 保留完整的 commit body
-protect_breaking_commits = false
 commit_parsers = [
     { message = "^feat", group = "<!-- 0 -->✨ 新功能" },
     { message = "^fix", group = "<!-- 1 -->🐛 Bug修复" },

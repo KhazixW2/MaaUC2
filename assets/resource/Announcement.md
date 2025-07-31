@@ -1,14 +1,14 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
-  <img alt="LOGO" src="logo.ico" width="256" height="256" />
+  <img alt="LOGO" src="https://mirrorchyan.com/api/misc/static/project/MaaGB-re.png" width="256" height="256" />
 </p>
 
 <div align="center">
 
 # MaaGumballs
 
-基于全新架构的 地下城堡2 小助手。图像技术 + 模拟控制，解放双手！
-由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！  
+基于全新架构的 不思议迷宫 小助手。图像技术 + 模拟控制，解放双手！
+由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动  
 <a href="https://maagb.xyz/" target="_blank" style="font-weight: bold;">🔗 本项目 文档站 仓库</a>  
 <a href="https://github.com/KhazixW2/MaaGumballs" target="_blank" style="font-weight: bold;">🔗 本项目 GitHub 仓库</a>
 
@@ -23,30 +23,43 @@
 
 ## 功能列表
 
+- 启动/关闭游戏
+- 每日签到
+- 炼金招牌
+- 派遣魔蜥
+- 每日扫荡
+- 天空探索
+- 遗迹探索
+- 荒野探索
+- 马戏团任务
+- 旅游、佣兵和天空商店
+- 联盟任务、联盟礼包、
+- 好友礼物
+- 养狗速刷竞技场101层
+- 黑永恒（9,19）
+- 神锻系列：日光、水池、测序、融序
 
 ## 使用说明
 
-- [新手上路](./docs/zh_cn/manual/新手上路.md)(**使用前必看**)
-- [功能介绍](./docs/zh_cn/manual/功能介绍.md)
-- [MaaPiCli使用说明](./docs/zh_cn/manual/MaaPiCli.md)
-- [连接设置](./docs/zh_cn/manual/连接设置.md)
-- [常见问题](./docs/zh_cn/manual/常见问题.md)
-- [Mirror酱使用说明](./docs/zh_cn/manual/Mirror酱.md)
+- [新手上路](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/新手上路.md)(**使用前必看**)
+- [功能介绍](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/功能介绍.md)
+- [MaaPiCli使用说明](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/MaaPicli.md)
+- [连接设置](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/连接设置.md)
+- [常见问题](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/常见问题.md)
+- [Mirror酱使用说明](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/manual/Mirror酱.md)
 
-## 开发相关
+## 开发者文档
 
-- [开发前须知](./docs/zh_cn/develop/开发前须知.md)
-- [项目结构](./docs/zh_cn/develop/项目结构.md)
-- [interface.json编写](./docs/zh_cn/develop/interface.json编写.md)
-- [Pipeline编写](./docs/zh_cn/develop/Pipeline编写.md)
-- [Custom编写](./docs/zh_cn/develop/Custom编写.md)
-- [项目重构](./docs/zh_cn/develop/项目重构.md)
-- [外服适配](./docs/zh_cn/develop/外服适配.md)
-- [文档编写](./docs/zh_cn/develop/文档编写.md)
+- [开发前须知](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/开发前须知.md)
+- [项目结构](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/项目结构.md)
+- [interface.json编写](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/interface.json编写.md)
+- [Pipeline编写](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/Pipeline编写.md)
+- [Custom编写](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/Custom编写.md)
+- [项目重构](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/项目重构.md)
+- [外服适配](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/外服适配.md)
+- [文档编写](https://github.com/KhazixW2/MaaGumballs/blob/main/docs/zh_cn/develop/文档编写.md)
 - [🎞️ 视频教程](https://www.bilibili.com/video/BV1yr421E7MW)
 - [⭐项目模板](https://github.com/MaaXYZ/MaaPracticeBoilerplate), 建议新的开发者参考项目模版的readme文档
-
-更多文档请前往 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 主仓库查看
 
 ## 免责声明
 
