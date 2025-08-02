@@ -19,6 +19,77 @@
         ],
         "expected": [
             "湿地"
+        ],
+        "action": "Custom",
+        "custom_action": "DailyDrigt_Start",
+        "post_delay": 1000,
+        "timeout": 2000
+    },
+    "DailyDrigt_Event": {
+        "recognition": "OCR",
+        "expected": [
+            "黑暗裂隙"
+        ],
+        "roi": [
+            258,
+            136,
+            197,
+            116
+        ],
+        "next": [
+            "DailyDrigt_Entry"
+        ],
+        "post_delay": 100,
+        "timeout": 2000
+    },
+    "DailyDrigt_Entry": {
+        "recognition": "OCR",
+        "expected": [
+            "黑暗水晶"
+        ],
+        "roi": [
+            80,
+            533,
+            592,
+            423
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "DailyDrigt_Entry_Select"
         ]
+    },
+    "DailyDrigt_Entry_Select": {
+        "recognition": "OCR",
+        "expected": [
+            "前往"
+        ],
+        "roi": [
+            131,
+            129,
+            460,
+            590
+        ],
+        "order_by": "Vertical",
+        "action": "Click",
+        "post_delay": 300,
+        "timeout": 2000,
+        "next": [
+            "MapSelect_Confirm"
+        ]
+    },
+    "DailyDrigt_GetReward": {
+        "recognition": "OCR",
+        "expected": [
+            "领取"
+        ],
+        "roi": [
+            105,
+            218,
+            492,
+            767
+        ],
+        "action": "Click"
     }
 }

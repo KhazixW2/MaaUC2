@@ -1,7 +1,7 @@
 {
-    "name": "MaaGumballs",
-    "url": "https://github.com/KhazixW2/MaaGumballs",
-    "mirrorchyan_rid": "MaaGB",
+    "name": "MaaUC2",
+    "url": "https://github.com/KhazixW2/MaaUC2",
+    "mirrorchyan_rid": "MaaUC2",
     "mirrorchyan_multiplatform": true,
     "controller": [
         {
@@ -16,7 +16,6 @@
                 "{PROJECT_DIR}/resource/base"
             ]
         }
-        
     ],
     "agent": {
         "child_exec": "python",
@@ -57,12 +56,16 @@
             ]
         },
         {
+            "name": "黑暗裂隙",
+            "entry": "DailyDrigt",
+            "repeatable": true,
+            "repeat_count": 1
+        },
+        {
             "name": "退出游戏",
             "entry": "StopGame",
             "doc": "注意: 该node只在完成所有任务后,仅退出游戏"
         }
     ],
-    "option": {
-        
-    }
+    "option": {}
 }

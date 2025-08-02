@@ -1,4 +1,44 @@
 {
+    "moveUp": {
+        "action": "Click",
+        "target": [
+            304,
+            392,
+            108,
+            89
+        ],
+        "post_delay": 50
+    },
+    "moveRight": {
+        "action": "Click",
+        "target": [
+            529,
+            658,
+            116,
+            119
+        ],
+        "post_delay": 50
+    },
+    "moveDown": {
+        "action": "Click",
+        "target": [
+            318,
+            804,
+            77,
+            134
+        ],
+        "post_delay": 50
+    },
+    "moveLeft": {
+        "action": "Click",
+        "target": [
+            47,
+            658,
+            157,
+            158
+        ],
+        "post_delay": 50
+    },
     "FormationSelect": {
         "recognition": "OCR",
         "roi": [
@@ -64,22 +104,25 @@
         ],
         "action": "Click",
         "post_delay": 500,
-        "timeout": 2000,
+        "timeout": 3000,
         "next": [
-            "Confirm_Text"
+            "MapSelect_Confirm"
         ]
     },
-    "MapCheck": {
+    "MapSelect_Confirm": {
         "recognition": "OCR",
         "roi": [
-            0,
-            0,
-            219,
-            124
+            224,
+            560,
+            272,
+            323
         ],
         "expected": [
-            "湿地"
-        ]
+            "确定"
+        ],
+        "action": "Click",
+        "post_delay": 3000,
+        "timeout": 3000
     },
     "Map_InMap": {
         "recognition": "OCR",
@@ -92,5 +135,31 @@
         "expected": [
             "背包"
         ]
+    },
+    "Map_ReturnHome": {
+        "recognition": "OCR",
+        "roi": [
+            252,
+            14,
+            467,
+            131
+        ],
+        "expected": [
+            "回城"
+        ],
+        "target_offset": [
+            0,
+            -50,
+            0,
+            0
+        ],
+        "action": "Click",
+        "next": [
+            "MapSelect_Confirm"
+        ]
+    },
+    "FightTest": {
+        "action": "Custom",
+        "custom_action": "fightTest"
     }
 }
