@@ -1,0 +1,96 @@
+{
+    "FormationSelect": {
+        "recognition": "OCR",
+        "roi": [
+            47,
+            542,
+            632,
+            144
+        ],
+        "expected": [
+            "1队"
+        ],
+        "action": "Click",
+        "post_delay": 300,
+        "timeout": 2000,
+        "next": [
+            "FormationSelect_StartOff"
+        ]
+    },
+    "FormationSelect_StartOff": {
+        "recognition": "OCR",
+        "roi": [
+            29,
+            1048,
+            651,
+            151
+        ],
+        "expected": [
+            "出发"
+        ],
+        "action": "Click",
+        "post_delay": 200,
+        "timeout": 2000
+    },
+    "MapSelect": {
+        "recognition": "OCR",
+        "roi": [
+            219,
+            35,
+            295,
+            121
+        ],
+        "expected": [
+            "请选择",
+            "传送"
+        ],
+        "next": [
+            "MapSelect_Entry"
+        ],
+        "interrupt": [
+            "SwipeToDown"
+        ]
+    },
+    "MapSelect_Entry": {
+        "recognition": "OCR",
+        "roi": [
+            186,
+            122,
+            352,
+            1041
+        ],
+        "expected": [
+            "湿地"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 2000,
+        "next": [
+            "Confirm_Text"
+        ]
+    },
+    "MapCheck": {
+        "recognition": "OCR",
+        "roi": [
+            0,
+            0,
+            219,
+            124
+        ],
+        "expected": [
+            "湿地"
+        ]
+    },
+    "Map_InMap": {
+        "recognition": "OCR",
+        "roi": [
+            541,
+            12,
+            167,
+            116
+        ],
+        "expected": [
+            "背包"
+        ]
+    }
+}
